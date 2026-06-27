@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato - Sergio Bus</title>
+
+<link rel="stylesheet" href="contato.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <nav class="navbar">
+
+            <img src="img/logo1.png" class="logo" alt="Logo">
+
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html" class="ativo">Contato</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-text">
+
+            <h4>Entre em contato</h4>
+
+            <h1>
+                Estamos prontos para
+                <span>te levar mais longe.</span>
+            </h1>
+
+            <p>
+                Fale com a nossa equipe e tire suas dúvidas.
+                Será um prazer atender você!
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="contato">
+
+        <div class="formulario">
+
+            <h3>📩 Envie sua mensagem</h3>
+
+            <form action="enviar.php" method="POST">
+
+                <input
+                    type="text"
+                    name="nome"
+                    placeholder="Seu nome"
+                    required
+                >
+
+                <div class="duplo">
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Seu e-mail"
+                        required
+                    >
+
+                    <input
+                        type="tel"
+                        name="telefone"
+                        placeholder="Seu telefone"
+                    >
+
+                </div>
+
+                <textarea
+                    name="mensagem"
+                    placeholder="Sua mensagem"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Enviar mensagem
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="informacoes">
+
+            <h3>📍 Outras formas de contato</h3>
+
+            <div class="info">
+                <strong>Telefone / WhatsApp</strong>
+                <p>(79) 99999-9999</p>
+            </div>
+
+            <div class="info">
+                <strong>E-mail</strong>
+                <p>contato@sergiobus.com.br</p>
+            </div>
+
+            <div class="info">
+                <strong>Endereço</strong>
+                <p>Aracaju - SE, Brasil</p>
+            </div>
+
+            <div class="info">
+                <strong>Horário de atendimento</strong>
+                <p>Segunda a Sexta: 08h às 22h</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="cta">
+
+        <img src="img/onibus.png" alt="Ônibus">
+
+        <div>
+
+            <h3>Sua viagem começa com a gente!</h3>
+
+            <p>
+                Conte com a Sergio Bus para viagens seguras,
+                confortáveis e inesquecíveis.
+            </p>
+
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#ececec;
+padding:20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 0 15px rgba(0,0,0,.08);
+}
+
+/* MENU */
+
+.navbar{
+height:80px;
+padding:0 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:white;
+}
+
+.logo{
+height:100px;
+}
+
+.navbar ul{
+display:flex;
+gap:40px;
+list-style:none;
+}
+
+.navbar a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+.navbar a.ativo{
+color:#6f4cff;
+border-bottom:3px solid #6f4cff;
+padding-bottom:8px;
+}
+
+/* HERO */
+
+.hero{
+height:800px;
+background:url("img/praia.jpg");
+background-size:cover;
+background-position:center;
+position:relative;
+padding:40px;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.20);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.texto{
+max-width:500px;
+color:white;
+}
+
+.texto h1{
+font-size:78px;
+line-height:1;
+}
+
+.texto span{
+display:block;
+color:#6f4cff;
+}
+
+.texto p{
+font-size:22px;
+margin-top:20px;
+line-height:1.5;
+}
+
+.hero-logo img{
+width:400px;
+margin-top:100px;
+}
+
+/* CARDS */
+
+.vantagens{
+position:relative;
+z-index:2;
+
+margin-top:200px;
+
+display:flex;
+gap:80px;
+
+background:rgba(20,20,20,.70);
+
+backdrop-filter:blur(8px);
+
+padding:25px;
+
+border-radius:15px;
+}
+
+.item{
+flex:1;
+color:white;
+}
+
+.item h3{
+color:#7d5cff;
+margin-bottom:10px;
+font-size:28px;
+}
+
+.item p{
+font-size:15px;
+line-height:1.5;
+}

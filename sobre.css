@@ -1,0 +1,213 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ececec;
+    padding:20px;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+/* MENU */
+
+.navbar{
+    height:80px;
+    background:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 40px;
+}
+
+.logo{
+    height:80px;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:40px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#444;
+    font-weight:600;
+}
+
+.ativo{
+    color:#6f4cff !important;
+    border-bottom:3px solid #6f4cff;
+    padding-bottom:8px;
+}
+
+/* HERO */
+
+.hero{
+    height:350px;
+
+    background-image:url("img/viagem.png");
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,.25);
+}
+
+.hero-text{
+    position:relative;
+    z-index:2;
+
+    color:white;
+
+    padding-left:40px;
+
+    max-width:600px;
+}
+
+.hero-text h4{
+    color:#8b6cff;
+    margin-bottom:10px;
+}
+
+.hero-text h1{
+    font-size:60px;
+    line-height:1;
+}
+
+.hero-text span{
+    color:#6f4cff;
+}
+
+.hero-text p{
+    margin-top:20px;
+    line-height:1.8;
+}
+
+/* MISSÃO */
+
+.missao{
+    display:grid;
+    grid-template-columns:300px 1fr 300px;
+
+    gap:30px;
+
+    padding:30px;
+    align-items:center;
+}
+
+.foto img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.centro{
+    text-align:center;
+}
+
+.centro h3{
+    color:#6f4cff;
+    margin-bottom:15px;
+}
+
+.centro p{
+    color:#555;
+}
+
+.cards{
+    margin-top:30px;
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    width:150px;
+}
+
+.card i{
+    font-size:35px;
+    color:#6f4cff;
+    margin-bottom:10px;
+}
+
+.card h4{
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:13px;
+}
+
+/* COMPROMISSO */
+
+.compromisso{
+    margin:25px;
+
+    background:#f0ebff;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.compromisso i{
+    font-size:35px;
+    color:#6f4cff;
+}
+
+.compromisso h3{
+    margin-bottom:5px;
+}
+
+.compromisso p{
+    color:#555;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:1000px){
+
+    .missao{
+        grid-template-columns:1fr;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero-text h1{
+        font-size:40px;
+    }
+
+}

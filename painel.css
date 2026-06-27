@@ -1,0 +1,105 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg, #ececec, #d9d9ff);
+}
+
+/* TOPO */
+.topo{
+    background:linear-gradient(90deg, #6c3cff, #8a5bff);
+    color:white;
+    padding:20px 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.topo h1{
+    margin:0;
+}
+
+.sair{
+    background:white;
+    color:#6c3cff;
+    padding:10px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.sair:hover{
+    transform:scale(1.05);
+    background:#f2f2ff;
+}
+
+/* CONTAINER */
+.container{
+    width:95%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+    margin-bottom:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:0.3s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    margin:0;
+    font-size:32px;
+    color:#6c3cff;
+}
+
+.card p{
+    margin:5px 0 0;
+    color:#666;
+}
+
+/* TABELA */
+.tabela-card{
+    text-align:left;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+th{
+    background:#6c3cff;
+    color:white;
+    padding:12px;
+    text-align:left;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f5f0ff;
+}
